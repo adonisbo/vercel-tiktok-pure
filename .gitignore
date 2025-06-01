@@ -88,16 +88,16 @@ out
 
 # Nuxt.js build output
 .nuxt
-dist
+# dist # Usually we want to deploy 'dist' for Nuxt, but it depends.
 
 # Svelte Kit build output
 .svelte-kit
-build
+# build # Usually we want to deploy 'build' for SvelteKit.
 
 # Remix build output
-.cache
-build/
-public/build/
+# .cache # Remix cache can sometimes be ignored.
+# build/ # Remix build output.
+# public/build/ # Remix public build output.
 
 # Docusaurus build output
 .docusaurus
@@ -112,11 +112,11 @@ public/build/
 .vuepress/dist
 
 # Astro files
-dist/
+# dist/ # Astro output directory.
 .astro/
 
 # Vercel
-.vercel/
+.vercel/ # Ignore Vercel CLI local state directory
 
 # Mac files
 .DS_Store

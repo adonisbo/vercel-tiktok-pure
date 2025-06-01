@@ -1,0 +1,13 @@
+{
+  "name": "vercel-tiktok-pure",
+  "version": "1.0.0",
+  "description": "纯净版TikTok信息查看器",
+  "type": "module",
+  "main": "api/handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

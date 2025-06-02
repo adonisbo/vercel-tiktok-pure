@@ -1,9 +1,9 @@
 {
   "name": "vercel-tiktok-pure",
   "version": "1.0.0",
-  "description": "纯净版TikTok信息查看器", 
+  "description": "纯净版TikTok信息查看器",
   "type": "module",
-  "main": "api/hello.js", 
+  "main": "api/handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vercel dev"
@@ -11,5 +11,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {} 
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cors": "^2.8.5"
+  }
 }

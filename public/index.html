@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head><title>Vercel纯净测试</title></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok用户信息速查</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <h1>你好，Vercel！</h1>
-    <p>如果看到这个页面，说明 public/index.html 已被正确提供服务。</p>
-    <p><a href="/api/hello">测试API (/api/hello)</a></p>
+    <header>
+        <h1>TikTok用户信息速查</h1>
+    </header>
+
+    <main>
+        <section id="query-section">
+            <h2>查询用户信息</h2>
+            <form id="tiktok-query-form">
+                <div>
+                    <label for="tiktokUserId">TikTok用户ID:</label>
+                    <input type="text" id="tiktokUserId" name="tiktokUserId" placeholder="例如: txunamydiamond" required>
+                </div>
+                <div>
+                    <label for="jinaApiKey">Jina AI API Key:</label>
+                    <input type="password" id="jinaApiKey" name="jinaApiKey" placeholder="输入您的Jina AI API Key" required>
+                </div>
+                <button type="submit" id="queryButton">查询</button>
+            </form>
+            <div id="loading-indicator" style="display: none;">正在查询，请稍候...</div>
+            <div id="error-message" style="color: red; display: none;"></div>
+        </section>
+
+        <section id="results-section" style="display: none;">
+            <h2>查询结果</h2>
+            <div id="user-profile-id"></div>
+            <p><strong>关注数:</strong> <span id="followingCount">-</span></p>
+            <p><strong>粉丝量:</strong> <span id="followersCount">-</span></p>
+            <p><strong>获赞量:</strong> <span id="likesCount">-</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 TikTok用户信息速查 (AI辅助开发版)</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

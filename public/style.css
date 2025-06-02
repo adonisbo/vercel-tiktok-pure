@@ -1,0 +1,13 @@
+/* public/style.css */
+body {
+    font-family: sans-serif; /* ... (省略了大部分CSS，请使用您之前版本中完整的CSS) ... */
+    line-height: 1.6;
+}
+/* ... (请确保这里是完整的CSS内容) ... */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}

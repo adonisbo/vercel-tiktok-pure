@@ -37,7 +37,21 @@
             <p><strong>获赞量:</strong> <span id="likesCount">-</span></p>
         </section>
 
-        <!-- 新增的本地历史记录区域 -->
+        <!-- 新增/恢复：历史记录存储选项 -->
+        <section id="history-options-section">
+            <h2>历史记录设置</h2>
+            <div id="history-storage-choice">
+                <label>
+                    <input type="radio" name="storageOption" value="local" checked> 保存到本地浏览器
+                </label>
+                <label>
+                    <input type="radio" name="storageOption" value="cloud"> 保存到云端 (Supabase)
+                </label>
+            </div>
+        </section>
+        <!-- 新增/恢复结束 -->
+
+        <!-- 已有的本地历史记录区域 -->
         <section id="local-history-section">
             <h2>本地查询历史</h2>
             <ul id="local-history-list">
@@ -45,7 +59,18 @@
             </ul>
             <button id="clearLocalHistoryButton" style="display: none;">清空本地历史</button>
         </section>
-        <!-- 新增区域结束 -->
+        <!-- 本地历史区域结束 -->
+        
+        <!-- 新增：为云端历史预留一个显示区域 -->
+        <section id="cloud-history-section" style="display: none;"> 
+            <h2>云端查询历史 (Supabase)</h2>
+            <button id="loadCloudHistoryButton">加载云端历史</button>
+            <ul id="cloud-history-list">
+                <!-- 云端历史记录项将通过JavaScript动态添加到这里 -->
+            </ul>
+            <!-- 可以考虑也为云端历史添加清空按钮，但逻辑会更复杂，先不加 -->
+        </section>
+        <!-- 云端历史区域结束 -->
 
     </main>
 
